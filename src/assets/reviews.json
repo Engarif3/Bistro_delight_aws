@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "rating": 4.5,
+    "details": "Excellent service and delicious food. Highly recommend this place!"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "rating": 4.0,
+    "details": "Great ambiance and friendly staff. The pizza was amazing!"
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "rating": 5.0,
+    "details": "Absolutely fantastic experience. Will definitely come back again."
+  },
+  {
+    "id": 4,
+    "name": "Emily Johnson",
+    "rating": 3.5,
+    "details": "Good food, but the service was a bit slow during peak hours."
+  }
+]
