@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useCart } from "../shared/CartContext";
+import getImageSrc from "../../utils/getImageSrc";
 
-const MenuCard = ({ dish, getImageSrc }) => {
+const MenuCard = ({ dish }) => {
   const [showModal, setShowModal] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const { cart, updateCart } = useCart();
@@ -39,8 +40,8 @@ const MenuCard = ({ dish, getImageSrc }) => {
     setShowModal(false);
     // toast.success("Item added to cart!");
     toast.success("Item added to cart!", {
-      position: "bottom-right", // Position the toast here
-      autoClose: 2000, // Automatically close after 3 seconds
+      position: "bottom-right",
+      autoClose: 2000,
     });
   };
 

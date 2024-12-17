@@ -1,20 +1,9 @@
 import React, { useState } from "react";
+import getImageSrc from "../../../utils/getImageSrc";
 
 const FoodItem = ({ item }) => {
   const { name, image, price, description } = item;
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // const backendUrl = "http://localhost:8000";
-  const backendUrl = "http://44.202.128.16:8000";
-
-  const getImageSrc = (imagePath) => {
-    if (!imagePath) {
-      return "/placeholder.jpg"; // Default placeholder image
-    }
-    if (imagePath.startsWith("http://") || imagePath.startsWith("https://")) {
-      return imagePath;
-    }
-    return `${backendUrl}${imagePath}`;
-  };
 
   // Limit description to 30 words
   const words = description.split(" ");
