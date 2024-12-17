@@ -17,7 +17,7 @@ const NavBar = () => {
     <div className="flex items-center">
       <div className="flex items-center">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Homes</Link>
         </li>
         <li>
           <Link to="/menu">Our Menu</Link>
