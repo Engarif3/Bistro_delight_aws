@@ -138,7 +138,7 @@ jobs:
           EC2_USER: ${{ secrets.EC2_USER }}
         run: |
           # Create deployment directory and set correct permissions
-          ssh $EC2_USER@$EC2_HOST "mkdir -p ~/app/dist && chmod -R 775 ~/app/dist"
+          ssh $EC2_USER@$EC2_HOST "mkdir -p ~/app/dist && sudo chmod -R 775 ~/app/dist"
 
           # Copy files to EC2 instance
           rsync -avz --no-times --exclude='.git' --exclude='node_modules' --exclude='.github' . $EC2_USER@$EC2_HOST:~/app/
