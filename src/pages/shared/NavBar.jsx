@@ -6,7 +6,8 @@ import { useCart } from "./CartContext";
 const NavBar = () => {
   const { cart } = useCart(); // Access cart from context
 
-  const user = "Arif"; // Placeholder, replace with actual user logic
+  //const user = "Arif"; // Placeholder, replace with actual user logic
+  const user = ""; // Placeholder, replace with actual user logic
   const isAdmin = true; // Placeholder, replace with actual admin check
 
   const handleLogOut = () => {
@@ -22,9 +23,9 @@ const NavBar = () => {
         <li>
           <Link to="/menu">Our Menu</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/order/salad">Order Food</Link>
-        </li>
+        </li> */}
         {isAdmin ? (
           <li>
             <Link to="/dashboard/adminhome">Dashboard</Link>
