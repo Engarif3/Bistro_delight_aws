@@ -1,4 +1,5 @@
-const backendUrl = "http://44.202.128.16:8000";
+// const backendUrl = "http://44.202.128.16:8000";
+const backendUrl = "http://3.87.186.39";
 // const backendUrl = "http://localhost:8000";
 const getImageSrc = (imagePath) => {
   if (!imagePath) {
