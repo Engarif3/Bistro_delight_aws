@@ -51,7 +51,7 @@ const FoodItems = () => {
       ></SectionTitle>
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-10/12">
-          <div className="grid md:grid-cols-2 gap-8 mx-16">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 mx-16">
             {dishesToDisplay.map((item) => (
               <FoodItem key={item.id} item={item}></FoodItem>
             ))}
