@@ -145,7 +145,7 @@ const CartPage = () => {
               className="btn  bg-orange-600 text-white rounded-lg text-lg hover:bg-green-700 transition duration-200"
               onClick={handleCheckOut}
             >
-              Proceed to Checkout
+              Confirm order
             </Link>
           </div>
         )}

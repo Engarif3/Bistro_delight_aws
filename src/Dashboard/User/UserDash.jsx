@@ -16,7 +16,7 @@ const UserDash = () => {
       ) : (
         <div className="max-w-6xl w-full px-4">
           <h2 className="text-center text-3xl font-bold text-orange-600 mb-6">
-            Your Orders
+            My Orders
           </h2>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             {orders.map((order, index) => (
