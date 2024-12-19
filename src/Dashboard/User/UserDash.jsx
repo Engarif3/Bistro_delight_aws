@@ -43,10 +43,10 @@ const UserDash = () => {
                           <h4 className="text-lg font-semibold text-gray-700">
                             {item.name}
                           </h4>
-                          <p className="text-sm text-gray-500">
+                          {/* <p className="text-sm text-gray-500">
                             Description:{" "}
                             {item.description || "No description available"}
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                       <div className="flex items-center space-x-4">
