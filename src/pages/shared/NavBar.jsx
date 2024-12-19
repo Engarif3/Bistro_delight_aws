@@ -28,7 +28,8 @@ const NavBar = () => {
         </li> */}
         {isAdmin ? (
           <li>
-            <Link to="/dashboard/adminhome">Dashboard</Link>
+            {/* <Link to="/dashboard/adminhome">Dashboard</Link> */}
+            <Link to="/dashboard/adminhome">My Order</Link>
           </li>
         ) : (
           <li>

@@ -3,23 +3,8 @@ import App from "../App";
 import Home from "../pages/Home/Home";
 import MenuList from "../pages/Our Menu/MenuList";
 import CartPage from "../pages/Cart/CartPage";
-// import Main from "../Layout/Main";
-// import Home from "../pages/Home/Home/Home";
-// import Menu from "../pages/Menu/Menu/Menu";
-// import Order from "../pages/Order/Order/Order";
-// import Login from "../pages/Login/Login";
-// import SignUp from "../pages/SignUp/SignUp";
-// import PrivateRoute from "./PrivateRoute";
-// import Secret from "../pages/Shared/Secret/Secret";
-// import Dashboard from "../Layout/Dashboard";
-// import MyCart from "../pages/Dashboard/MyCart/MyCart";
-// import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
-// import AddItem from "../pages/Dashboard/AddItem/AddItem";
-// import AdminRoute from "./AdminRoute";
-// import ManageItems from "../pages/Dashboard/ManageItems/ManageItems";
-// import Payment from "../pages/Dashboard/Payment/Payment";
-// import UserHome from "../pages/Dashboard/UserHome/UserHome";
-// import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
+import UserDash from "../Dashboard/User/UserDash";
+import Login from "../pages/shared/Login";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +22,14 @@ export const router = createBrowserRouter([
       {
         path: "dashboard/mycart",
         element: <CartPage></CartPage>,
+      },
+      {
+        path: "/dashboard/adminhome",
+        element: <UserDash></UserDash>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
       //   {
       //     path: "order/:category",
