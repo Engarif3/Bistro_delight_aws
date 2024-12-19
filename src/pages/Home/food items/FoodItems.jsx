@@ -7,7 +7,7 @@ const FoodItems = () => {
   const [dishes, setDishes] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [showAll, setShowAll] = useState(false); // State to toggle showing all items
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     api
@@ -50,8 +50,8 @@ const FoodItems = () => {
         subHeading="Popular Items"
       ></SectionTitle>
       <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center w-10/12">
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 mx-16">
+        <div className="flex flex-col justify-center items-center w-full md:w-10/12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:mx-16 mx-12">
             {dishesToDisplay.map((item) => (
               <FoodItem key={item.id} item={item}></FoodItem>
             ))}
