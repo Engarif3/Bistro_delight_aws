@@ -29,9 +29,9 @@ const UserDash = () => {
                   {order.items.map((item, i) => (
                     <div
                       key={i}
-                      className="flex items-center justify-between  p-4 border rounded-lg shadow-md hover:bg-gray-50 "
+                      className="flex items-center justify-between  p-2 border rounded-lg shadow-md hover:bg-gray-50 "
                     >
-                      <div className="flex items-center space-x- ">
+                      <div className="flex items-center ">
                         <div className="w-16 h-16 rounded-lg overflow-hidden mr-2">
                           <img
                             src={item.image}
