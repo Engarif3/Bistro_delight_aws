@@ -1,97 +1,96 @@
-# Bistro Delight
+# Bistro Delight (React JS)
 
-A fully responsive restaurant management application with a focus on managing menus, and customer orders. This application interacts with the Symfony backend application, working seamlessly together.
+## Overview
 
----
+This frontend is a part of full-stack application **Restaurant Management** consists of a separate Backend ([MenuCraft](https://github.com/Engarif3/restaurant-management)) built with Symfony and MariaDB, and this Frontend (**Bistro Delight**) developed by using React JS. The frontend communicates with the backend via RESTful APIs.
 
 ## Features
 
-### Frontend
-
-- Displays restaurant menus with categories.
-- Add items to the cart, modify quantities, and view the total cost.
-- Responsive design using TailwindCSS and DaisyUI.
+- Customers can:
+  - Browse the restaurant menu.
+  - Add items to their cart.
+  - Modify item quantities.
+  - Place orders.
 - React Router for smooth navigation.
+- Responsive design using TailwindCSS and DaisyUI.
+- REST APIs for communication with the backend(**MenuCraft**).
+- Docker for Containerization of the application.
+- Docker Compose for Managing and orchestrating multiple containers.
 
-### Backend
-
-- CRUD operations for dishes and categories.
-- RESTful API integration for frontend communication.
-- Dockerized setup for seamless development and production.
-- MariaDB database integration.
-
----
-
-## Tech Stack
-
-### Frontend
+## Technologies Used
 
 - **Framework**: React
 - **Styling**: TailwindCSS, DaisyUI
 - **Icons**: React Icons
 - **Routing**: React Router Dom
 
----
-
 ## Prerequisites
 
 Make sure you have the following installed on your system:
 
-### for containerization with docker:
-
-- [Docker](https://www.docker.com/)
 - [Setup backend application first](https://github.com/Engarif3/restaurant-management)
+- Adjust the backend **base api url** to your frontend application. (**very important**)
 
-### If running locally instead of Docker:
+- **Option 1**: Run locally:
 
-- [Node.js](https://nodejs.org/)
-- [PHP](https://www.php.net/)
-- [Symfony](https://symfony.com/)
-- [Composer](https://getcomposer.org/)
+  - Node 18.18 installed.
 
----
+- **Option 2**: Run with Docker:
+  - Docker and Docker Compose installed on your system.
 
-## Installation and Setup
+## Getting Started
 
-### 1. Clone the Repository
+### Running Locally
 
-```bash
-    git clone <repository-link>
-    cd bistro-delight
-```
+1. Clone the repository:
 
-### 2. Install Frontend Dependencies
+   ```bash
+   git clone <Repo URL>
+   cd <repository-folder>
+   ```
 
-```bash
-    npm install
-```
+2. Install dependencies:
 
-### 3. Start the Development Server
+   ```bash
+   npm install
+   ```
 
-**_Make sure, you are running the backend application before running this command_**
+3. Set up the `.env` file with your credentials.
 
-```bash
- npm run dev
-```
+4. Run the application using the following command:
 
-### 4. Build and start container
+   ```bash
+   npm run dev
+   ```
 
-```bash
-    git clone <repository-link>
-    cd bistro-delight
-    docker compose up
-```
+5. Access the application locally:
+   ```bash
+   https://localhost:5173 or https://127.0.0.1:5173
+   ```
 
-### 5. Access the Application
+### Running with Docker
 
-```bash
-    http://localhost:5173
-```
+1. Clone the repository:
+
+   ```bash
+   git clone <Repo URL>
+   cd <repository-folder>
+   ```
+
+2. Start the application using Docker Compose:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+3. Access the application locally:
+   ```bash
+   https://localhost:5173 or https://127.0.0.1:5173
+   ```
 
 ## 📞 Contact
 
 For any inquiries or issues, feel free to reach out:
 
-- **Name:** Md. Arifur Rahman
 - **Email:** [arif.aust.eng@gmail.com](mailto:arif.aust.eng@gmail.com)
 - **LinkedIn:** [Md. Arifur Rahman](https://www.linkedin.com/in/engarif3/)
