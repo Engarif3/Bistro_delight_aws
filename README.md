@@ -2,7 +2,7 @@
 
 ## Overview
 
-This frontend is a part of full-stack application **Restaurant Management** consists of a separate Backend ([MenuCraft](https://github.com/Engarif3/restaurant-management)) built with Symfony and MariaDB, and this Frontend (**Bistro Delight**) developed by using React JS. The frontend communicates with the backend via RESTful APIs.
+This frontend is a part of full-stack application **Restaurant Management** which consists of a separate Backend ([MenuCraft](https://github.com/Engarif3/restaurant-management)) built with Symfony and MariaDB, and this Frontend (**Bistro Delight**) developed by using React JS. The frontend communicates with the backend via RESTful APIs.
 
 ## Features
 
