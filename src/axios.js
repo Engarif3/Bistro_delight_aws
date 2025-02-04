@@ -5,8 +5,8 @@ const api = axios.create({
   //baseURL: "https://localhost:8000/api",
   // baseURL: "https://localhost:8000/api",
   // baseURL: "http://44.202.128.16:8000/api",
-  // baseURL: "http://3.87.186.39/api",
-  baseURL: "/api",
+  // baseURL: "http://3.87.186.39/api", //when using aws
+  baseURL: "/api", //when using netlify to solve problem http fro backend
 
   // baseURL: process.env.BASE_API_URL,
   headers: {
