@@ -1,0 +1,36 @@
+nelmio_cors:
+  defaults:
+    allow_origin: [
+        "http://localhost:5173",
+        "http://44.204.158.131",
+        "http://44.204.158.131:5173",
+        "https://bistro-delight-aws.netlify.app",
+      ] # Replace with your React frontend's origin
+    allow_headers: ["Content-Type", "Authorization"]
+    allow_methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    max_age: 3600
+  paths:
+    "^/api/":
+      allow_origin:
+        [
+          "http://localhost:5173",
+          "http://44.204.158.131",
+          "http://44.204.158.131:5173",
+          "https://bistro-delight-aws.netlify.app",
+        ]
+      allow_headers: ["Content-Type", "Authorization"]
+      allow_methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+      max_age: 3600
+
+
+
+
+ # BASE_API_URL=https://localhost:8000/api
+
+# ============================
+# example
+#EC2_HOST = 44.3.8.312
+#EC2_SSH_PRIVATE_KEY
+#EC2_USER  = ubuntu
+# ============================
+# VITE_BACKEND_URL=http://3.87.186.39/api

@@ -41,7 +41,12 @@ const FoodItems = () => {
   }
 
   // Determine the dishes to display based on the `showAll` state
-  const dishesToDisplay = showAll ? dishes : dishes.slice(0, 4);
+  // const dishesToDisplay = showAll ? dishes : dishes.slice(0, 4);
+  const dishesToDisplay = Array.isArray(dishes)
+    ? showAll
+      ? dishes
+      : dishes.slice(0, 4)
+    : [];
 
   return (
     <section className="mb-12">
