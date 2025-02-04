@@ -1,4 +1,4 @@
 /api/*  http://3.87.186.39/api/:splat  200
 /uploads/images/*  http://3.87.186.39/uploads/images/:splat  200
-
+/*    /index.html   200
 
