@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const CartPage = () => {
   const navigate = useNavigate();
-  const { cart, updateCart } = useCart();
+  const { cart, updateCart, updateOrders } = useCart();
 
   const handleIncreaseQuantity = (index) => {
     const updatedCart = [...cart];
@@ -47,8 +47,6 @@ const CartPage = () => {
   };
 
   const handleCheckOut = () => {
-    // const currentDate = new Date(); // Get current date and time
-    // const formattedDate = currentDate.toLocaleString(); // Format the date/time (e.g., "12/19/2024, 3:00:00 PM")
     const formattedDate = getFormattedDateTime(); // Format the date/time (e.g., "12/19/2024, 3:00:00 PM")
 
     // Add the order to the orders state (including the date and time)
@@ -57,6 +55,7 @@ const CartPage = () => {
       date: formattedDate, // Add the date and time of the order
     };
 
+    updateOrders(newOrder);
     // Assuming you are storing orders in local storage
     const savedOrders = JSON.parse(localStorage.getItem("orders")) || [];
     savedOrders.push(newOrder); // Add new order to existing ones

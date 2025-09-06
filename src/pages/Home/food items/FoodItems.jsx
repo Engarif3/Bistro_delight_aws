@@ -47,6 +47,7 @@ const FoodItems = () => {
       ? dishes
       : dishes.slice(0, 4)
     : [];
+  // console.log(dishes);
 
   return (
     <section className="mb-12">

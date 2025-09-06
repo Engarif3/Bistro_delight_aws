@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useCart } from "../shared/CartContext";
-import getImageSrc from "../../utils/getImageSrc";
 
 const MenuCard = ({ dish }) => {
   const [showModal, setShowModal] = useState(false);
@@ -44,6 +43,21 @@ const MenuCard = ({ dish }) => {
       autoClose: 2000,
     });
   };
+
+  // ==============image show =================
+  const backendUrl = "https://menucrafts.onrender.com";
+
+  // This function checks if an image path is available and is valid.
+  const getImageSrc = (imagePath) => {
+    if (!imagePath) {
+      return "/placeholder.jpg"; // Default placeholder image
+    }
+    if (imagePath.startsWith("http://") || imagePath.startsWith("https://")) {
+      return imagePath;
+    }
+    return `${backendUrl}${imagePath}`;
+  };
+  // ==============image show =================
 
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105 overflow-hidden">

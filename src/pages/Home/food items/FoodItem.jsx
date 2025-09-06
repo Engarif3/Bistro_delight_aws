@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import getImageSrc from "../../../utils/getImageSrc";
 
 const FoodItem = ({ item }) => {
   const { name, image, price, description } = item;
@@ -8,6 +7,21 @@ const FoodItem = ({ item }) => {
   // Limit description to 30 words
   const words = description.split(" ");
   const limitedText = words.slice(0, 15).join(" ");
+
+  // ==============image show =================
+  const backendUrl = "https://menucrafts.onrender.com";
+
+  // This function checks if an image path is available and is valid.
+  const getImageSrc = (imagePath) => {
+    if (!imagePath) {
+      return "/placeholder.jpg"; // Default placeholder image
+    }
+    if (imagePath.startsWith("http://") || imagePath.startsWith("https://")) {
+      return imagePath;
+    }
+    return `${backendUrl}${imagePath}`;
+  };
+  // ==============image show =================
 
   return (
     <>

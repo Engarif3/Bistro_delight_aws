@@ -10,7 +10,8 @@ const DishList = () => {
   //baseURL: "https://localhost:8000/api/dishes",
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/dishes", {
+    // fetch("http://localhost:8000/api/dishes", {
+    fetch("https://menucrafts.onrender.com/api/dishes", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -26,6 +27,7 @@ const DishList = () => {
       .catch((err) => setError(err.message));
   }, []);
 
+  console.log(dishes);
   if (error) {
     return <div>Error: {error}</div>;
   }

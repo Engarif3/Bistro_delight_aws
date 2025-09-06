@@ -25,6 +25,7 @@ const List_of_Dishes = () => {
       .get("/dishes")
       .then((response) => {
         setDishes(response.data);
+
         setLoading(false);
       })
       .catch((err) => {
@@ -32,8 +33,6 @@ const List_of_Dishes = () => {
         setLoading(false);
       });
   }, []);
-
-  console.log(dishes);
 
   if (loading) {
     return (
