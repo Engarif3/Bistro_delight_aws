@@ -33,6 +33,8 @@ const List_of_Dishes = () => {
       });
   }, []);
 
+  console.log(dishes);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">

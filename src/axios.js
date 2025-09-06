@@ -6,7 +6,8 @@ const api = axios.create({
   // baseURL: "https://localhost:8000/api",
   // baseURL: "http://44.202.128.16:8000/api",
   // baseURL: "http://3.87.186.39/api",
-  baseURL: "/api",
+  // baseURL: "/api",
+  baseURL: "https://menucrafts.onrender.com/api",
 
   // baseURL: process.env.BASE_API_URL,
   headers: {
